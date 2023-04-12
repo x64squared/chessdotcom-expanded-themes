@@ -1,0 +1,57 @@
+:root {
+    /* Black pieces */
+    --bb-svg: null;
+    --bk-svg: null;
+    --bn-svg: null;
+    --bp-svg: null;
+    --bq-svg: null;
+    --br-svg: null;
+
+    /*White pieces*/
+    --wb-svg: null;
+    --wk-svg: null;
+    --wn-svg: null;
+    --wp-svg: null;
+    --wq-svg: null;
+    --wr-svg: null;
+}
+
+/* Black pieces */
+.bb {
+    background-image: var(--bb-svg) !important;
+}
+.bk {
+    background-image: var(--bk-svg) !important;
+}
+.bn {
+    background-image: var(--bn-svg) !important;
+}
+.bp {
+    background-image: var(--bp-svg) !important;
+}
+.bq {
+    background-image: var(--bq-svg) !important;
+}
+.br {
+    background-image: var(--br-svg) !important;
+}
+
+/* White pieces */
+.wb {
+    background-image: var(--wb-svg) !important;
+}
+.wk {
+    background-image: var(--wk-svg) !important;
+}
+.wn {
+    background-image: var(--wn-svg) !important;
+}
+.wp {
+    background-image: var(--wp-svg) !important;
+}
+.wq {
+    background-image: var(--wq-svg) !important;
+}
+.wr {
+    background-image: var(--wr-svg) !important;
+}

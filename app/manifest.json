@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "chesscom-themes",
+  "description": "chesscom-themes",
+  "version": "1.0",
+  "icons": {
+    "16": "./images/ccThemes_logo.png",
+    "48": "./images/ccThemes_logo.png",
+    "128": "./images/ccThemes_logo.png"
+  },
+  "host_permissions": ["https://www.chess.com/"],
+  "permissions": ["storage"],
+  "action": {
+    "default_icon": "./images/ccThemes_logo.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.chess.com/play*",
+        "https://www.chess.com/game*",
+        "https://www.chess.com/analysis*",
+        "https://www.chess.com/puzzles*"
+      ],
+      "run_at": "document_start",
+      "js": ["build.js"],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["build.js", "popup.js", "styles/**"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

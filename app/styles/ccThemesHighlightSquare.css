@@ -1,0 +1,8 @@
+:root {
+    --highlight-square-color: #9cc700;
+}
+
+.highlight[style*='opacity: 0.5;']:not([style*='background-color: rgb(244, 42, 50);']) {
+    background-color: var(--highlight-square-color) !important;
+    opacity: 0.42 !important;
+}
