@@ -21,4 +21,3 @@ $ npm run build
 1. Open `chrome://extensions`
 2. Toggle developer mode
 3. Select the `build` directory created by the previous command
-

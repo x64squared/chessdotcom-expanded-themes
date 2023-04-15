@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf build/",
-    "format": "prettier --write --ignore-unknown \"{config,app}/**/*.{html,css,js,ts,json}\"",
+    "format": "prettier --write --ignore-unknown \"{config,app,.github}/**/*.{html,css,js,ts,json,yml}\"",
     "watch": "webpack --mode=development --watch --config config/webpack.config.js",
     "build": "webpack --mode=production --config config/webpack.config.js"
   },
