@@ -10,7 +10,6 @@ jobs:
   build-extension:
 
     runs-on: ubuntu-latest
-    container: node:19
     env:
       RELEASE_NAME: chessdotcom-expanded-themes_${{ github.ref_name }}
 
@@ -23,7 +22,10 @@ jobs:
         run: npm install
       -
         name: Build extension
-        run: npm run build
+        run: |
+          node --version
+          npm --version
+          npm run build
       -
         name: Zip and release
         run: |
