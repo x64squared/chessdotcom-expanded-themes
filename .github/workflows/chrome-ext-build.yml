@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RELEASE_NAME: chessdotcom-expanded-themes_${{ github.ref_name }}
+    permissions:
+      contents: write
 
     steps:
       -
