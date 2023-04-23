@@ -1,0 +1,7 @@
+:root {
+    --board-background-img: null;
+}
+
+.board {
+    background-image: var(--board-background-img) !important;
+}

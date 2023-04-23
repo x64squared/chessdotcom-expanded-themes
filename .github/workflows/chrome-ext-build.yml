@@ -1,0 +1,45 @@
+name: Build Chrome Extension
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+
+  build-extension:
+
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_NAME: chessdotcom-expanded-themes_${{ github.ref_name }}
+    permissions:
+      contents: write
+
+    steps:
+      -
+        name: Checkout code
+        uses: actions/checkout@v3
+      -
+        name: Setup node 19.9
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19.9
+      -
+        name: Install npm packages
+        run: |
+          node --version
+          npm --version
+          npm install
+      -
+        name: Build extension
+        run: npm run build
+      -
+        name: Zip files
+        run: |
+          mv build/ ${RELEASE_NAME}/
+          zip -r ${RELEASE_NAME}.zip ${RELEASE_NAME}/
+      -
+        name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: '*.zip'
