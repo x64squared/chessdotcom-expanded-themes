@@ -17,41 +17,53 @@
 }
 
 /* Black pieces */
-.piece.bb, .hand-piece.bb {
+.piece.bb,
+.hand-piece.bb {
     background-image: var(--bb-svg) !important;
 }
-.piece.bk, .hand-piece.bk {
+.piece.bk,
+.hand-piece.bk {
     background-image: var(--bk-svg) !important;
 }
-.piece.bn, .hand-piece.bn {
+.piece.bn,
+.hand-piece.bn {
     background-image: var(--bn-svg) !important;
 }
-.piece.bp, .hand-piece.bp {
+.piece.bp,
+.hand-piece.bp {
     background-image: var(--bp-svg) !important;
 }
-.piece.bq, .hand-piece.bq {
+.piece.bq,
+.hand-piece.bq {
     background-image: var(--bq-svg) !important;
 }
-.piece.br, .hand-piece.br {
+.piece.br,
+.hand-piece.br {
     background-image: var(--br-svg) !important;
 }
 
 /* White pieces */
-.piece.wb, .hand-piece.wb {
+.piece.wb,
+.hand-piece.wb {
     background-image: var(--wb-svg) !important;
 }
-.piece.wk, .hand-piece.wk {
+.piece.wk,
+.hand-piece.wk {
     background-image: var(--wk-svg) !important;
 }
-.piece.wn, .hand-piece.wn {
+.piece.wn,
+.hand-piece.wn {
     background-image: var(--wn-svg) !important;
 }
-.piece.wp, .hand-piece.wp {
+.piece.wp,
+.hand-piece.wp {
     background-image: var(--wp-svg) !important;
 }
-.piece.wq, .hand-piece.wq {
+.piece.wq,
+.hand-piece.wq {
     background-image: var(--wq-svg) !important;
 }
-.piece.wr, .hand-piece.wr {
+.piece.wr,
+.hand-piece.wr {
     background-image: var(--wr-svg) !important;
 }
