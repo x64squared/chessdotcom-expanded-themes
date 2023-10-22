@@ -17,41 +17,53 @@
 }
 
 /* Black pieces */
-.bb {
+.piece.bb,
+.hand-piece.bb {
     background-image: var(--bb-svg) !important;
 }
-.bk {
+.piece.bk,
+.hand-piece.bk {
     background-image: var(--bk-svg) !important;
 }
-.bn {
+.piece.bn,
+.hand-piece.bn {
     background-image: var(--bn-svg) !important;
 }
-.bp {
+.piece.bp,
+.hand-piece.bp {
     background-image: var(--bp-svg) !important;
 }
-.bq {
+.piece.bq,
+.hand-piece.bq {
     background-image: var(--bq-svg) !important;
 }
-.br {
+.piece.br,
+.hand-piece.br {
     background-image: var(--br-svg) !important;
 }
 
 /* White pieces */
-.wb {
+.piece.wb,
+.hand-piece.wb {
     background-image: var(--wb-svg) !important;
 }
-.wk {
+.piece.wk,
+.hand-piece.wk {
     background-image: var(--wk-svg) !important;
 }
-.wn {
+.piece.wn,
+.hand-piece.wn {
     background-image: var(--wn-svg) !important;
 }
-.wp {
+.piece.wp,
+.hand-piece.wp {
     background-image: var(--wp-svg) !important;
 }
-.wq {
+.piece.wq,
+.hand-piece.wq {
     background-image: var(--wq-svg) !important;
 }
-.wr {
+.piece.wr,
+.hand-piece.wr {
     background-image: var(--wr-svg) !important;
 }

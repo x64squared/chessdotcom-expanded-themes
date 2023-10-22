@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "chessdotcom-expanded-themes",
   "description": "chessdotcom-expanded-themes",
-  "version": "1.0",
+  "version": "1.0.1",
   "icons": {
     "16": "./images/ccThemes_logo.png",
     "48": "./images/ccThemes_logo.png",

@@ -13,6 +13,7 @@ function setPieceTheme(pieceTheme) {
         console.log(`changing piece theme to ${pieceTheme}`);
         Object.entries(pieceThemeUrls).forEach(([key, value]) => {
             root.style.setProperty(`--${key}-svg`, value);
+            root.style.setProperty(`--theme-piece-set-${key}`, value);
         });
     }
 }
